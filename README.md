@@ -35,7 +35,7 @@ https://github.com/krtkl/snickerdoodle-board-files
 
 Copy and Paste the board files into:
 ```
-<YOUR-XILINX-INSTALLATION-FOLDER>/2023.1/data/boards/board_files/
+<YOUR-VIVADO-INSTALLATION-FOLDER>/2023.1/data/boards/board_files/
 ```
 
 ## How to download bit file into the FPGA
