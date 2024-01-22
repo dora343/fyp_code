@@ -41,7 +41,8 @@ Copy and Paste the board files into:
 ## How to download bit file into the FPGA
 wip
 
-
+## Useful Resources
+- https://krtkl.com/uploads/snickerdoodle-book.pdf
 
 
 
