@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Jan 19 17:16:54 2024
+# Process ID: 21308
+# Current directory: C:/Users/wusiu/Documents/GitHub/fyp_code
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29120 C:\Users\wusiu\Documents\GitHub\fyp_code\fyp_code.xpr
+# Log file: C:/Users/wusiu/Documents/GitHub/fyp_code/vivado.log
+# Journal file: C:/Users/wusiu/Documents/GitHub/fyp_code\vivado.jou
+# Running On: Dora343, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 34301 MB
+#-----------------------------------------------------------
+start_gui
+open_project -read_only C:/Users/wusiu/Documents/GitHub/fyp_code/fyp_code.xpr
+update_compile_order -fileset sources_1
