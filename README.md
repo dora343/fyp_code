@@ -13,8 +13,8 @@ Xilinx Vivado 2023.1
 ## How to Contribute
 Clone the project
 ```
-git clone https://github.com/dora343/Final-Year-Project-Repo
-cd Final-Year-Project-Repo
+git clone https://github.com/dora343/fyp_code
+cd fyp_code
 ```
 
 Pull updates from github
