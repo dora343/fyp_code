@@ -4,8 +4,8 @@
 - Project code: ZY02a-23
 
 ## Hardware
-krtkl Snickerdoodle Black
-krtkl Snickerdoodle breakyBreaky breakout board
+- krtkl Snickerdoodle Black
+- krtkl Snickerdoodle breakyBreaky breakout board
 
 ## Software
 Xilinx Vivado 2023.1
