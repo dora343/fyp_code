@@ -1,4 +1,4 @@
-*.jou
-*.log
-*.str
-fyp_code.cache/
+/*
+!/fyp_code.srcs
+!/README.md
+!/fyp_code.xpr
