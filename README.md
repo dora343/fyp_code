@@ -10,6 +10,9 @@
 ## Software
 - Xilinx Vivado 2023.1
 
+## Design
+![BIST_DESIGN](BIST_DESIGN.webp)
+
 ## How to Contribute
 Clone the project
 ```
