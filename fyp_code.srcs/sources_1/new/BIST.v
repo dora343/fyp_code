@@ -50,20 +50,18 @@ module BIST(start, clock, reset, fail, default_data_in, default_addr_in,  sram_d
         .out(test_rw_in)
     );
     mux1bits MUX_RW (
-        .in1(test_rw_in), .in2(Q[7]), .select(MUX_RW_SELECT), 
+        .in1(Q[7]), .in2(test_rw_in), .select(MUX_RW_SELECT), 
         .out(rw_in)
     );    
     comparator CMP (
+        .clock(clock), 
         .in1(true_data), .in2(sram_qout),
         .eq(eq)
     );
-    SRAM ram(
-        .address(sram_addrin), .data(sram_din), .readWriteBar(sram_rw), 
-        .q(sram_qout)
-    );
+
     assign sram_addrin = addr_in;
     assign sram_din = data_in;
     assign sram_rw = rw_in;
-    assign fail = ~eq;
+    assign fail = (~(Q[6]&Q[7])) ? 0 :~eq;
     
 endmodule

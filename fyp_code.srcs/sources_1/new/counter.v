@@ -9,6 +9,7 @@ module counter ( clock, ENABLE, reset, q, cout );
     reg [12:0] cnt_reg;
     reg zero;
     initial zero = 8'b 00000000;
+    initial cnt_reg <= zero;
 
     always @(posedge reset) begin
         cnt_reg <= zero;

@@ -10,11 +10,8 @@ module bist_controller(start, clock, reset, cout, testmode);
         if (reset)
             state <= 0;
         else 
-            if (state)
-                if (cout) state <= 0;
-                else state <= 1;    
-            else
-                if (start) state <= 1;         
+            if (cout) state <= 0;
+            else if (start) state <= 1; 
     end
     
     assign testmode = state;

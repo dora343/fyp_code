@@ -21,19 +21,26 @@
 
 
 module SRAM (
+  input wire clock,
+  input wire rst,
   input wire [4:0] address,
   input wire [31:0] data,
   input wire readWriteBar,
-  output reg [31:0] q
+  output wire [31:0] q
 );
 
   reg [31:0] memory [0:31];
+  reg [31:0] out;
+  //reg [31:0] reg_d;
 
-  always @(posedge readWriteBar) begin
+always @(posedge clock) begin
     if (readWriteBar) begin
-      q <= memory[address];
+      out <= memory[address];
     end else begin
       memory[address] <= data;
     end
-  end
+end
+
+assign q = readWriteBar ? out : memory[address];
+
 endmodule
