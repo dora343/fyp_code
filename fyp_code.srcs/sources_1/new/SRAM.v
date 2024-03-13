@@ -28,10 +28,17 @@ module SRAM (
   input wire readWriteBar,
   output wire [31:0] q
 );
-
+  integer i;
   reg [31:0] memory [0:31];
   reg [31:0] out;
   //reg [31:0] reg_d;
+initial begin
+    out = 32'b00000000000000000000000000000000;
+    for (i = 0; i < 6'b100000; i = i + 1) begin
+        memory[i] = out;
+    end
+end
+
 
 always @(posedge clock) begin
     if (readWriteBar) begin
@@ -46,6 +53,6 @@ always @(posedge clock) begin
     end
 end
 
-assign q = readWriteBar ? out : memory[address];
+assign q = out;
 
 endmodule

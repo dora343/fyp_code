@@ -7,7 +7,7 @@ module comparator(in1, in2, eq, clock);
     output eq;
     
     reg tmp;
-    always @(posedge clock)
+    always @(clock)
     begin
         tmp <= in1 == in2;
     end

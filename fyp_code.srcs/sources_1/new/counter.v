@@ -3,12 +3,12 @@
 module counter ( clock, ENABLE, reset, q, cout );
 
     input clock, ENABLE, reset;
-    output [11:0] q;
+    output [13:0] q;
     output cout;
     
-    reg [12:0] cnt_reg;
+    reg [14:0] cnt_reg;
     reg zero;
-    initial zero = 8'b 00000000;
+    initial zero = 15'b000000000000000;
     initial cnt_reg <= zero;
 
     always @(posedge reset) begin
@@ -21,7 +21,7 @@ module counter ( clock, ENABLE, reset, q, cout );
         end
     end
 
-    assign q = cnt_reg[11:0];
-    assign cout = cnt_reg[12];
+    assign q = cnt_reg[13:0];
+    assign cout = cnt_reg[14];
 
 endmodule
