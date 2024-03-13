@@ -37,7 +37,12 @@ always @(posedge clock) begin
     if (readWriteBar) begin
       out <= memory[address];
     end else begin
+    if (address == 4'b00101) begin
+      memory[address] <= 32'b00000000000000000000000000000000; 
+    end else begin
       memory[address] <= data;
+    end
+      
     end
 end
 
